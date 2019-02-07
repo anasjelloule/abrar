@@ -7,14 +7,14 @@
             </div>
             <div class="col-md-7 p-0">
                 <div class="row">
-                    <div class="col-md-5">
-                        <img src="./img/carte.png" class="img-fluid w-100" />
+                    <div class="col-md-5 pl-0">
+                        {!! setting('site.map') !!}
                     </div>
                     <div class="col-md-5 text-white">
                         <h3><b> Adresse siège Social</b></h3>
-                        Abrar Invest: Lotissment la colline. N° 11. Sidi Maarouf Casablanca – Maroc
+                        {{ setting('site.adresse') }}
                         <h3><b>Contact</b></h3>
-                        Email: contact@abrarimmo.com Téléphone: +212 (0) 522 78 76 61
+                        Email: {{ setting('site.email') }} <br/> Téléphone: {{ setting('site.telephone') }}
                     </div>
                     <div class="col-md-2">
 

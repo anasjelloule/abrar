@@ -17,13 +17,10 @@ class SiteController extends Controller
     }
     public function pages($slug)
     {
-        // return Page::all();
-        $page = Page::where('slug', $slug)->firstOrFail();
-        // return $page->title;
-        // dd($page->id);
+
+        $page = Page::where('slug', $slug)->where('status', 'ACTIVE')->firstOrFail();
         if (isset($page->id)) {
             return view('pages.page', compact('page'));
-            // return view('pages.about', compact('page'));
         }
 
         abort(404);

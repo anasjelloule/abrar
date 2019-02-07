@@ -1,12 +1,12 @@
 @extends('pages.master') 
 @section('header')
-    @include('partials.head1')
+  @include('partials.head1')
 @endsection
  
 @section('script')
 <script src="js/countUp.min.js"></script>
 <script>
-    $('.counter').each(function() {
+  $('.counter').each(function() {
   var $this = $(this),
       countTo = $this.attr('data-count');
   
@@ -16,7 +16,7 @@
 
   {
 
-    duration: 1000,
+    duration: 2500,
     easing:'linear',
     step: function() {
       $this.text(Math.floor(this.countNum));
