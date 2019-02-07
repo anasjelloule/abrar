@@ -9,7 +9,61 @@
 main {
   position: relative;
 }
+@font-face{
+  font-family: 'monsterat';
+  src: url('../fonts/montserrat-black');
+  font-weight: bold;
+}
 
+@font-face{
+  font-family: 'monsterat';
+  src: url('../fonts/montserrat-thin.otf');
+  font-weight: 100;
+}
+@font-face{
+  font-family: 'monsterat';
+  src: url('../fonts/montserrat-extralight.otf');
+  font-weight: 200;
+}
+@font-face{
+  font-family: 'monsterat';
+  src: url('../fonts/montserrat-light.otf');
+  font-weight: 300;
+}
+@font-face{
+  font-family: 'monsterat';
+  src: url('../fonts/montserrat-regular.otf');
+  font-weight: 400;
+}
+@font-face{
+  font-family: 'monsterat';
+  src: url('../fonts/montserrat-medium.otf');
+  font-weight: 500;
+}
+@font-face{
+  font-family: 'monsterat';
+  src: url('../fonts/montserrat-semibold.otf');
+  font-weight: 600;
+}
+@font-face{
+  font-family: 'monsterat';
+  src: url('../fonts/montserrat-bold.otf');
+  font-weight: 700;
+}
+@font-face{
+  font-family: 'monsterat';
+  src: url('../fonts/montserrat-extrabold.otf');
+  font-weight: 800;
+}
+@font-face{
+  font-family: 'monsterat';
+  src: url('../fonts/montserrat-black.otf');
+  font-weight: 900;
+}
+body{
+  font-family: 'monsterat' !important;
+  font-weight: 400;
+}
 p {
   /* color: #000; */
   color: #787878;
