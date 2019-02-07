@@ -3,9 +3,9 @@
     <!-- Logo -->
     <div class="u-header__navbar-brand-wrapper">
         <a class="navbar-brand u-header__navbar-brand" href="/" aria-label="Abrar">
-                <img class="u-header__navbar-brand-default" src="img/logo-abrar.png" alt="Logo" />
-                <img class="u-header__navbar-brand-on-scroll" src="img/logo-abrar.png" alt="Logo" style="height: 60px;" />
-                <img class="u-header__navbar-brand-mobile" src="img/logo-abrar.png" alt="Logo" />
+                <img class="u-header__navbar-brand-default" src="{{ 'storage/'.setting('site.logo') }}" alt="Logo" />
+                <img class="u-header__navbar-brand-on-scroll" src="{{ 'storage/'.setting('site.logo') }}" alt="Logo" style="height: 60px;" />
+                <img class="u-header__navbar-brand-mobile" src="{{ 'storage/'.setting('site.logo') }}" alt="Logo" />
             </a>
     </div>
     <!-- End Logo -->
@@ -23,7 +23,7 @@
     <!-- Navigation -->
     <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse py-0">
         {{--
-    @include('partials.menu') --}} {{ menu('front','partials.menu') }}
+    @include('partials.menu') --}} {{ menu('Top_menu','partials.menu') }}
     </div>
     <!-- End Navigation -->
 </nav>

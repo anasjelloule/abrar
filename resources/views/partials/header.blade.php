@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Abrar</title>
+    <title> @if(isset($page)) {{ $page->title." |" }} @endif{{ setting('site.title') }} </title>
 
     <head>
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="img/ico.png" sizes="64x64" />
+        <link rel="icon" type="image/png" href="{{ 'storage/'.setting('site.icon') }}" sizes="64x64" />
 
         <!-- CSS Global Compulsory -->
         <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.css')}}" />
@@ -66,13 +66,10 @@
                             <span class="fa fa-angle-down u-unfold__icon-pointer u-unfold--language-icon-pointer ml-4"></span>
                         </option>
                         <option>
-                            <span class="font-size-14">English</span>
+                            <span class="font-size-14">Français</span>
                             <span class="fa fa-angle-down u-unfold__icon-pointer u-unfold--language-icon-pointer ml-4"></span>
                         </option>
-                        <option>
-                            <span class="font-size-14">English</span>
-                            <span class="fa fa-angle-down u-unfold__icon-pointer u-unfold--language-icon-pointer ml-4"></span>
-                        </option>
+                      
                     </select>
                     <img src="./img/fr.svg" class="my-2" alt="top barre" style="width: 40px;float: right;" />
                 </div>

@@ -13,8 +13,8 @@
 
 Route::get('/', 'SiteController@index');
 // Route::get('/about', 'SiteController@about')->name('about');
-Route::get('/{slug}', 'SiteController@pages')->name('pages');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+Route::get('/{slug}', 'SiteController@pages')->name('pages');

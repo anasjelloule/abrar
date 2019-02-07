@@ -1,8 +1,8 @@
-<ul class="navbar-nav u-header__navbar-nav">
+<ul class="menu_top navbar-nav u-header__navbar-nav">
     @foreach ($items as $item)
     <li class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="fadeInUp" data-animation-out="fadeOut">
-        <a id="{{ strtolower(str_replace(' ', '', $item->title))  }}" class="nav-link u-header__nav-link" href="{{ $item->url }}">{{
-            $item->title }} @if (count($item->children)!=0)<span class="fa fa-angle-down u-header__nav-link-icon"></span>@endif
+        <a id="{{ strtolower(str_replace(' ', '', $item->title))  }}" class="nav-link u-header__nav-link" href="{{ $item->url }}">&nbsp;&nbsp;{{
+            $item->title }}&nbsp;&nbsp; @if (count($item->children)!=0)<span class="fa fa-angle-down u-header__nav-link-icon"></span>@endif
             </a> @if (count($item->children)!=0)
         <ul id="{{ strtolower(str_replace(' ', '', $item->title))  }}" class="list-inline hs-sub-menu u-header__sub-menu mb-0 animated fadeOut"
             style="min-width: 220px; display: none;" aria-labelledby="{{ strtolower(str_replace(' ', '', $item->title))  }}">

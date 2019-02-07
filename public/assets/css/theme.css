@@ -11,7 +11,8 @@ main {
 }
 
 p {
-  color: #000;
+  /* color: #000; */
+  color: #787878;
 }
 
 h1,
@@ -7252,4 +7253,22 @@ footer .soci{
 .projets .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
   color: #ffffff;
     background-color: #2f8a8e;
+}
+.bg-gray{
+  background: #e1e1e1;
+}
+ 
+.menu_top .active a{
+  background: #0b757b;
+  background-clip: content-box;
+  color: #fff !important;
+}
+.header1:not(.u-scrolled) .menu_top >li >a{
+  
+  color: #fff !important;
+}
+
+.u-scrolled .menu_top >li >a{
+  /* color: #000 !important; */
+
 }

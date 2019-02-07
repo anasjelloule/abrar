@@ -17,14 +17,8 @@
                         Email: contact@abrarimmo.com Téléphone: +212 (0) 522 78 76 61
                     </div>
                     <div class="col-md-2">
-                        <div class="list-group list-group-flush list-group-transparent">
-                            <a class="list-group-item list-group-item-action active" href="#">ACCUEIL</a>
-                            <a class="list-group-item list-group-item-action" href="#">ABRAR IMMO</a>
-                            <a class="list-group-item list-group-item-action" href="#">Nos projets</a>
-                            <a class="list-group-item list-group-item-action" href="#">CARRIÈRE</a>
-                            <a class="list-group-item list-group-item-action" href="#">services</a>
-                            <a class="list-group-item list-group-item-action" href="#">contact</a>
-                        </div>
+
+                        {{ menu('Top_menu','partials.menufooter') }}
                     </div>
                     <div class="offset-md-5 col-md-7">
                         <ul class="icon-social">
@@ -109,6 +103,20 @@
             // initialization of slick carousel
             $.HSCore.components.HSSlickCarousel.init(".js-slick-carousel");
         });
+        jQuery(function($){
+   /*$("div.holder").jPages({
+      containerID: "product_list"
+    });*/
+$(".menu_footer a").filter(function(){
+
+    return this.href == location.href.replace(/#.*/, "");
+}).addClass("active");
+$(".menu_top li.nav-item a").filter(function(){
+ 
+
+    return this.href == location.href.replace(/#.*/, "");
+}).parent().addClass("active");
+  });
 
 </script>
 @yield('script')

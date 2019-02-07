@@ -23,6 +23,7 @@ class SiteController extends Controller
         // dd($page->id);
         if (isset($page->id)) {
             return view('pages.page', compact('page'));
+            // return view('pages.about', compact('page'));
         }
 
         abort(404);
