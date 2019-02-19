@@ -61,12 +61,12 @@
                 <span class="text-white mr-5"><strong>Languages</strong></span>
                 <div class="btn-group rounded d-block position-relative lang">
                     <select class="  py-2 px-3 pr-6 lang_fr">
-                        <option>
+                        <option disabled>
                             <span class="font-size-14">English</span>
                             <span class="fa fa-angle-down u-unfold__icon-pointer u-unfold--language-icon-pointer ml-4"></span>
                         </option>
-                        <option>
-                            <span class="font-size-14">Français</span>
+                        <option selected="selected">
+                            <span class="font-size-14" >Français</span>
                             <span class="fa fa-angle-down u-unfold__icon-pointer u-unfold--language-icon-pointer ml-4"></span>
                         </option>
                       
