@@ -56,7 +56,7 @@
                     </a>
                 </li>
             </ul>
-            <img src="./img/logo_top_bar.png" class="my-3" alt="top barre" />
+            <img src="{{asset('img/logo_top_bar.png')}}" class="my-3" alt="top barre" />
             <div class="d-flex align-items-center">
                 <span class="text-white mr-5"><strong>Languages</strong></span>
                 <div class="btn-group rounded d-block position-relative lang">
@@ -71,7 +71,7 @@
                         </option>
                       
                     </select>
-                    <img src="./img/fr.svg" class="my-2" alt="top barre" style="width: 40px;float: right;" />
+                    <img src="{{asset('./img/fr.svg')}}" class="my-2" alt="top barre" style="width: 40px;float: right;" />
                 </div>
             </div>
         </div>

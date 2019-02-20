@@ -17,4 +17,14 @@ Route::get('/', 'SiteController@index');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Route::get('/actualite', 'SiteController@blog')->name('blog');
+Route::get('/actualite/{slug}', 'SiteController@single')->name('single');
+
+Route::get('/contacts', function () {
+    $page = (object) array("header" => "header1", "title" => "contacts");
+    return view('pages.contacts', compact(['page']));
+})->name('contacts');
+Route::post('/contacts', 'SiteController@contacts');
+
 Route::get('/{slug}', 'SiteController@pages')->name('pages');

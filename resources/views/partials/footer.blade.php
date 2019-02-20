@@ -3,7 +3,7 @@
     <div class="container-fluid space-1 px-6">
         <div class="row justify-content-between">
             <div class="col-md-3">
-                <img src="./img/form.png" class="img-fluid w-80" />
+                <img src="{{asset('./img/form.png')}}" class="img-fluid w-80" />
             </div>
             <div class="col-md-7 p-0">
                 <div class="row">
@@ -21,10 +21,10 @@
                         {{ menu('Top_menu','partials.menufooter') }}
                     </div>
                     <div class="offset-md-5 col-md-7">
-                        <ul class="icon-social">
+                        <ul class="icon-social space-1-top">
                             <li class="ml-0">
                                 <a href="{{ setting('site.facebook') }}" target="_blank">
-                                    <!-- <img src="https://www.ev-qlik.com/wp-content/themes/elephantvert/assets/img/facebook.png"> -->
+                                    <!-- <img src="{{asset('https://www.ev-qlik.com/wp-content/themes/elephantvert/assets/img/facebook.png')}}"> -->
                                     <span class="soci fa"><i class="fab fa-facebook-f"></i></span>
                                 </a>
                             </li>
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class=" col-md-2">
-                <img src="./img/logo_footer.png" class="img-fluid" alt="logo adrar" />
+                <img src="{{asset('./img/logo_footer.png')}}" class="img-fluid" alt="logo adrar" />
             </div>
         </div>
     </div>
@@ -63,21 +63,21 @@
 <!-- End Go to Top -->
 
 <!-- JS Global Compulsory -->
-<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-<script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-<!-- <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script> -->
-<script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="{{asset('assets/vendor/jquery/dist/jquery.min.js')}}"></script>
+<script src="{{asset('assets/vendor/jquery-migrate/dist/jquery-migrate.min.js')}}"></script>
+<!-- <script src="{{asset('assets/vendor/popper.js/dist/umd/popper.min.js')}}"></script> -->
+<script src="{{asset('assets/vendor/bootstrap/bootstrap.min.js')}}"></script>
 
 <!-- JS Implementing Plugins -->
-<script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-<script src="assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="{{asset('assets/vendor/hs-megamenu/src/hs.megamenu.js')}}"></script>
+<script src="{{asset('assets/vendor/slick-carousel/slick/slick.js')}}"></script>
 
 
 <!-- JS Space -->
-<script src="assets/js/hs.core.js"></script>
-<script src="assets/js/components/hs.header.js"></script>
-<script src="assets/js/components/hs.go-to.js"></script>
-<script src="assets/js/components/hs.slick-carousel.js"></script>
+<script src="{{asset('assets/js/hs.core.js')}}"></script>
+<script src="{{asset('assets/js/components/hs.header.js')}}"></script>
+<script src="{{asset('assets/js/components/hs.go-to.js')}}"></script>
+<script src="{{asset('assets/js/components/hs.slick-carousel.js')}}"></script>
 <!-- JS Plugins Init. -->
 
 <script>

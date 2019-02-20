@@ -3,9 +3,9 @@
     <!-- Logo -->
     <div class="u-header__navbar-brand-wrapper">
         <a class="navbar-brand u-header__navbar-brand" href="/" aria-label="Abrar">
-                <img class="u-header__navbar-brand-default" src="{{ 'storage/'.setting('site.logo') }}" alt="Logo" />
-                <img class="u-header__navbar-brand-on-scroll" src="{{ 'storage/'.setting('site.logo') }}" alt="Logo" style="height: 60px;" />
-                <img class="u-header__navbar-brand-mobile" src="{{ 'storage/'.setting('site.logo') }}" alt="Logo" />
+                <img class="u-header__navbar-brand-default" src="{{ asset('storage/'.setting('site.logo')) }}" alt="Logo" />
+                <img class="u-header__navbar-brand-on-scroll" src="{{ asset('storage/'.setting('site.logo')) }}" alt="Logo" style="height: 60px;" />
+                <img class="u-header__navbar-brand-mobile" src="{{ asset('storage/'.setting('site.logo')) }}" alt="Logo" />
             </a>
     </div>
     <!-- End Logo -->
