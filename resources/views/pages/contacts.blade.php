@@ -2,39 +2,7 @@
 @section('header')
     @include('partials.head1')
 @endsection
- 
-@section('script')
-<script src="js/countUp.min.js"></script>
-<script>
-    $('.counter').each(function () {
-        var $this = $(this),
-            countTo = $this.attr('data-count');
-
-        $({ countNum: $this.text() }).animate({
-            countNum: countTo
-        },
-
-            {
-
-                duration: 2500,
-                easing: 'linear',
-                step: function () {
-                    $this.text(Math.floor(this.countNum));
-                },
-                complete: function () {
-                    $this.text(this.countNum);
-                    //alert('finished');
-                }
-
-            });
-
-
-
-    });
-
-</script>
-@endsection
- 
+  
 @section('content')
 <div class="gradient-overlay-half-dark-v3 bg-img-hero" style="background-image: url('https://htmlstream.com/preview/space-v1.2/assets/img/1920x800/img3.jpg');">
     <div class="container space-2 space-4-top--lg space-3-bottom--lg">
@@ -60,7 +28,7 @@
                     <li class="media align-items-center py-2"><img class="max-width-5 mr-2"
                             src="https://htmlstream.com/preview/space-v1.2/assets/svg/business-icons/iStar_Design_Business_LineIcons_Live-89.svg"
                             alt="Image Description" />
-                        <div class="media-body">Mon-Fri: 9 AM to 6 PM</div>
+                        <div class="media-body">contact@abrarimmo.com</div>
                     </li>
                     <li class="media align-items-center py-2"><img class="max-width-5 mr-2"
                             src="https://htmlstream.com/preview/space-v1.2/assets/svg/components/contacts-dark-icon.svg"
